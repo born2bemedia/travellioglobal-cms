@@ -227,6 +227,7 @@ export interface Article {
   title: string;
   slug?: string | null;
   image?: (number | null) | Media;
+  short_title?: string | null;
   excerpt?: string | null;
   info?: {
     root: {
@@ -427,6 +428,7 @@ export interface ArticlesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
   image?: T;
+  short_title?: T;
   excerpt?: T;
   info?: T;
   content?: T;

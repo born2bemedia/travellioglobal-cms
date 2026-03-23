@@ -45,6 +45,12 @@ export const Articles: CollectionConfig = {
       },
     },
     {
+      name: "short_title",
+      type: "text",
+      label: "Short Title",
+      localized: true,
+    },
+    {
       name: "excerpt",
       type: "text",
       label: "Excerpt",

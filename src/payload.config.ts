@@ -74,7 +74,7 @@ export default buildConfig({
           fields: ["title", "content"],
         },
         articles: {
-          fields: ["title", "info,", "content", "excerpt"],
+          fields: ["title", "info", "short_title", "content", "excerpt"],
         },
       },
     }),
