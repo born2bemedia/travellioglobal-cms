@@ -113,5 +113,23 @@ text-decoration: none;
       defaultValue: "customer",
       required: true,
     },
+    {
+      name: "wishlist",
+      type: "array",
+      label: "Wishlist",
+      fields: [
+        {
+          name: "product",
+          type: "text",
+          label: "Product",
+        },
+        {
+          name: "image",
+          type: "upload",
+          relationTo: "media",
+          label: "Image",
+        },
+      ],
+    },
   ],
 };

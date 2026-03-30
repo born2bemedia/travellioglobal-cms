@@ -180,6 +180,13 @@ export interface User {
   zip?: string | null;
   country?: string | null;
   role: 'admin' | 'customer';
+  wishlist?:
+    | {
+        product?: string | null;
+        image?: (number | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -465,6 +472,13 @@ export interface UsersSelect<T extends boolean = true> {
   zip?: T;
   country?: T;
   role?: T;
+  wishlist?:
+    | T
+    | {
+        product?: T;
+        image?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   email?: T;
