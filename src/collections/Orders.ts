@@ -94,7 +94,7 @@ export const Orders: CollectionConfig = {
     },
     {
       name: "orderNotes",
-      type: "text",
+      type: "textarea",
       label: "Order Notes",
       required: false,
     },
