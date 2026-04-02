@@ -60,6 +60,7 @@ text-decoration: none;
       type: "text",
       label: "Username",
       required: false,
+      unique: true,
     },
     {
       name: "phone",
